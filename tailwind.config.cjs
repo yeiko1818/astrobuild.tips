@@ -1,11 +1,11 @@
-{import('tailwindcss').Config}
+/*{import('tailwindcss').Config}*/
 
-module.export = {
-    content: ['./src/**/*//*.{astro,html,js,jsx}'],
+module.exports = {
+    content: ['./src/**/*/*.{astro,html,js,jsx,tsx,vue,svelte}'],
     theme: {
         extend: {
 
         }
     },
-    plugin: []
+    plugin: [require('@tailwindcss/line-clamp')]
 }
